@@ -1,0 +1,30 @@
+$screen-xs: 320px;
+$screen-sm: 550px;
+$screen-md: 992px;
+$screen-lg: 1400px;
+
+$color-black: #444;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: $color-black;
+  font-weight: bold;
+}
+
+
+@mixin mediaQuery($screenSize: $screen-xs) {
+  @content;
+}
+
+.container{
+  max-width: $screen-xs;
+  margin: 0px auto;
+  @include mediaQuery ($screen-sm) {
+    max-width: $screen-sm;
+  }
+  @include mediaQuery ($screen-md) {
+    max-width: $screen-md;
+  }
+}

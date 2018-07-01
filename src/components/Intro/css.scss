@@ -1,0 +1,28 @@
+.intro {
+  text-align: center;
+}
+
+.intro-logo {
+  animation: intro-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.intro-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.intro-title {
+  font-size: 1.5em;
+}
+
+.intro-intro {
+  font-size: large;
+}
+
+@keyframes intro-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

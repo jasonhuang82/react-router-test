@@ -1,0 +1,23 @@
+.navgation{
+  &{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  a{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #444;
+  }
+}
